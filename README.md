@@ -4,15 +4,15 @@ This project taught me how to scrape and show data fast and efficient and how to
 
 ## Setup
 
-**Install Dependencies**
+**Install Dependencies:**
    pip install -r requirements.txt
    
 
- **Configure Environment**
+ **Configure Environment:**
    GEMINI_API_KEY=your_key_here
 
 
-**Run the App**
+**Run the App:**
    streamlit run src/app.py
    
 
