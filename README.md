@@ -1,6 +1,6 @@
 
 A project designed to search, and summarize Turkish legal regulations in realtime. 
-This project taught me how to make a scrape and show data fast and efficient and how to implement ai to my projects.
+This project taught me how to scrape and show data fast and efficient and how to implement ai to my projects.
 
 ## Setup
 
