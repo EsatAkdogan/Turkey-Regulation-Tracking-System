@@ -5,7 +5,6 @@ This project taught me how to scrape and show data fast and efficient and how to
 ## Setup
 
 **Install Dependencies**
-   bash
    pip install -r requirements.txt
    
 
