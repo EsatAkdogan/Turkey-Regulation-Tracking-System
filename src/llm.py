@@ -22,7 +22,7 @@ class LLMSummarizer:
         try:
             prompt = f"""
             You are an expert assistant summarizing legal texts for lawyers and startups.
-            Summarize the following text in a short, clear, and action-oriented manner:
+            Summarize the following text in a clear and action-oriented manner:
 
             {text}
             """
