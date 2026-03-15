@@ -85,7 +85,7 @@ if st.button("Search All Sources", type="primary", use_container_width=True):
                 
                 seen_links = {r.get('link') or r.get('url') for r in local_results}
                 
-                #Show online results
+                # Show online results
                 for online_batch in scraper.search_online(search_query, days=days_to_scrape):
                     new_results = []
                     for res in online_batch:
@@ -103,7 +103,7 @@ if st.button("Search All Sources", type="primary", use_container_width=True):
             except Exception as e:
                 st.error(f"An error occurred during search: {str(e)}")
 
-#Results display
+# Results display
 if 'search_results' in st.session_state and st.session_state['search_results']:
     results = st.session_state['search_results']
     st.markdown(f"**Matches Found ({len(results)}):**")
