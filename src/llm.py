@@ -13,9 +13,6 @@ class LLMSummarizer:
             self.model = genai.GenerativeModel('gemini-2.0-flash') 
 
     def summarize(self, text):
-        """
-        Summarizes the text using Gemini.
-        """
         if not self.api_key:
             return f"[DEMO] {text[:100]}... (API Key missing. Please set GEMINI_API_KEY in .env)"
         
