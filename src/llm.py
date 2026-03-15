@@ -28,7 +28,7 @@ class LLMSummarizer:
                 response = self.model.generate_content(prompt)
                 return response.text
             except Exception as e:
-                # switch lite model on limit
+                # Switch lite model on limit
                 if "429" in str(e) or "quota" in str(e).lower():
                     fallback_model = genai.GenerativeModel('gemini-2.0-flash-lite')
                     response = fallback_model.generate_content(prompt)
