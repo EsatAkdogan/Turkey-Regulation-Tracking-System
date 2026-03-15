@@ -37,7 +37,7 @@ class RegulationScraper:
 
     def fetch_regulations(self):
         all_regulations = []
-        
+
         tasks = [
             (self._scrape_resmi_gazete, ()),
             (self._scrape_kvkk, ()),
@@ -61,9 +61,6 @@ class RegulationScraper:
         return all_regulations
     
     def search_online(self, keyword, days=30):
-        """
-        Searches online sources for a keyword and yields results as they are found.
-        """
         tasks = [
             (self._deep_scrape_resmi_gazete, {"days": days, "keyword": keyword}),
             (self._scrape_kvkk, {"keyword": keyword, "days": days}),
@@ -155,7 +152,7 @@ class RegulationScraper:
         regulations = []
         base_url = "https://www.kvkk.gov.tr"
         
-        #  years to scrape
+        #Years to scrape
         current_year = datetime.date.today().year
         num_years = max(1, (days // 365) + 1)
         target_urls = [f"https://www.kvkk.gov.tr/Icerik/{year}/Duyurular" for year in range(current_year, current_year - num_years, -1)]
