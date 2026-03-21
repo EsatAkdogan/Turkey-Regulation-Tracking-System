@@ -17,7 +17,7 @@ This project taught me how to scrape and show data fast and efficient and how to
    streamlit run src/app.py
 
 
-Future updates: Need to fix the (Monitored Turkish Sources:) showing two times while searching
+Future updates: Need to fix the (Monitored Turkish Sources:) showing two times while searching and Making scraper into one function that work for all website and this could greatly optimize the code not needing to write function each time i added new site
    
 
 
