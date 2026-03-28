@@ -16,7 +16,7 @@ This project taught me how to scrape and show data fast and efficient and how to
 **Run the App:**
    streamlit run src/app.py
 
-Future updates: Need to fix the (Monitored Turkish Sources:) showing two times while searching.
+Future updates: Fix after update scareper program doest no work 
    
 
 
