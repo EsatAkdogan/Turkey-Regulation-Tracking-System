@@ -94,7 +94,7 @@ class RegulationScraper:
                     today = datetime.date.today()
                     for i in range(days):
                         t_date = today - datetime.timedelta(days=i)
-                        url = source["url"] if i == 0 else f"https://www.resmigazete.gov.tr/eskiler/{t_date.year}/{t_date.month:02d}/{t_date.strftime('%Y%m%d')}.htm"
+                        url = f"https://www.resmigazete.gov.tr/fihrist?tarih={t_date.strftime('%Y-%m-%d')}"
                         tasks.append(executor.submit(self._fetch_single_page, url, source, keyword, t_date.isoformat()))
                 
                 elif source["type"] == "kvkk":
