@@ -86,7 +86,7 @@ if st.button("Search All Sources", type="primary", use_container_width=True):
                 seen_links = {r.get('link') or r.get('url') for r in local_results}
                 
                 # Show online results
-                for online_batch in scraper.search_online(search_query, days=days_to_scrape):
+                for online_batch in [scraper.unified_run(keyword=search_query, days=days_to_scrape)]:
                     new_results = []
                     for res in online_batch:
                         link = res.get('link') or res.get('url')
